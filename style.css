@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(232, 233, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+ /* HEADER */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: rgb(232, 233, 233);
+    z-index: 1000;
+
+}
+
+:not(.nav):hover .nav {
+    background-color: rgb(253, 165, 4, 1);
+}
+
+.headerr {
+    display: flex;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 20px;
+    margin-left: 80px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*animazione icone navbar*/
+.header-icon:hover {
+    transform: scale(1.3);
+}
+
+.member {
+    border: 1px solid black;
+    height: 30px;
+    width: 150px;
+    font-size: 13px;
+    text-align: center;
+    margin: 5px;
+    padding-top: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+:not(.member):hover .member {
+    background-color: rgb(232, 233, 233);
+}
+
+.identity {
+    background-image: url(https://picsum.photos/35);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    z-index: 900;
+
+}
+/* SEPARATORE following sezione articoli */
+.first-section {
+    height: 1500px;
+    padding: 40px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.separatore {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid grey;
+    margin: 0px 150px 0px 60px;
+}
+
+.text {
+    color: rgb(68, 67, 67);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.text:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+/* prima sezione */
+.container {
+    display: flex;
+
+}
+
+.news {
+    max-width: 80%;
+    margin: 10px 2px 15px 60px;
+} 
+
+.logo-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.not-bold {
+    font-weight: 400;
+}
+/* logo + nome */
+.logo2 {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: orange;
+    padding: 2px;
+    color: black;
+}
+
+.not-bold {
+    font-weight: 400;
+}
+
+.sub-title {
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.info-section {     /*contenuto articolo*/
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.info h1 {
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+.info p {
+    color: grey;
+    font-size: 20px;
+    margin-top: 12px;
+}
+/* bottom info of the section */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.reading p {
+    font-size: 13px;
+    color: grey;
+}
+
+.stack {
+    text-decoration: none;
+    color: grey;
+    background-color: rgb(225, 222, 222);
+    padding: 5px;
+    border-radius: 10px;
+}
+/* ultima riga dell'articolo + icone animate*/
+.footer-icon {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-menu {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-menu:hover {
+    color: orange;
+    transform: scale(1.5);
+}
+/* allineamento dell'imagine*/
+.img1 {
+    width: 170px;
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+/*stile della colonna destra*/
+.bar-body {
+    max-width: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    margin-top: 40px;
+    border-left: 1px solid grey;
+}
+ /*tre icone + btn twitter + later*/
+.first-div {
+    height: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.first-div .fa-solid {
+    color: grey;
+    font-size: 20px;
+}
+
+.first-div .fa-twitter {
+    color: rgb(0, 123, 255);
+}
+
+.side-bar h3 {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.twitter-btn {
+    border: 1px solid grey;
+    width: 180px;
+    white-space: nowrap;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.twitter-btn:hover {
+    border: 1px solid black;
+}
+
+.twitter-btn .fa-brands {
+    color: rgb(0, 123, 255);
+}
+
+.later {
+    color: grey;
+    font-size: 13px;
+}
+/*separatore barra latrale*/
+.side-separatore {
+    margin-top: 35px;
+    width: 260px;
+    border-bottom: 1px solid grey;
+}
+/* seconda sezione barra laterale*/
+.second-div {
+    height: 200px;
+    width: 290px;
+    padding-left: 20px;
+    border-left: 1px solid grey;
+}
+
+.second-div h3 {
+    margin: 2px 0px 30px 5px;
+}
+
+.div-container {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.elenco {
+    font-size: 13px;
+    background-color: rgb(219, 215, 215);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.elenco:hover {
+    background-color: orange;
+}
+/* terza sezione barra laterale */
+.third-div {
+    padding-left: 30px;
+    padding-right: 50px;
+    border-left: 1px solid grey;
+}
+
+.third-div h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.to-follow {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.author-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-image {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: url(https://picsum.photos/50);
+    background-size: cover;
+}
+
+.author-info h4 {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.author-info p {
+    font-size: 12px;
+    color: grey;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 50px;
+    max-width: 130px;
+}
+/* btn follow + animazione */
+.follow-btn {
+    border: 1px solid grey;
+    color: grey;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.follow-btn:hover {
+    color: black;
+    background-color: orange;
+}
+/* quarta sezione barra latrale */
+.fourth-div {
+    height: 350px;
+    width: 300px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid grey;
+}
+
+.fourth-div h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.side-link {
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+}
+
+.side-footer {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;  
+}
+
+.side-footer a {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
